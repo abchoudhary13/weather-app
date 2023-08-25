@@ -20,14 +20,14 @@ const Home = () => {
       <Error />
     ) : (
       <>
-      <div className="flex flex-col pt-56 md:pt-8 pb-4 gap-8">
-        <div className="px-5 p md:pt-2 flex gap-8 flex-col md:flex-row h-[55vh] justify-evenly justify-items-center">
+      <div className="flex flex-col pt-8 md:pt-8 pb-4 gap-8">
+        <div className="px-5 p md:pt-2 flex gap-8 flex-col md:flex-row justify-evenly justify-items-center">
           <div className="h-96 w-full py-4 md:h-80 md:w-[50%] lg:w-[36%] rounded-3xl shadow-xl text-center flex flex-col justify-evenly justify-items-center font-bold text-purple-500 border">
-            <h1 className="text-4xl py-4 md:text-5xl">{weatherData.name}</h1>
-            <h1 className="text-8xl py-2 md:text-9xl">
+            <h1 className="text-4xl py-4 sm:text-5xl">{weatherData.name}</h1>
+            <h1 className="text-8xl py-2 sm:text-9xl">
               {(weatherData.main.temp - 273.15).toPrecision(2)}°C
             </h1>
-            <h1 className="text-3xl py-4 md:text-4xl">{weatherData.weather[0].main}</h1>
+            <h1 className="text-3xl py-4 sm:text-4xl">{weatherData.weather[0].main}</h1>
           </div>
           <div className="h-96 w-full md:h-80 md:w-[50%] lg:w-[36%] p-2 rounded-3xl shadow-xl text-center flex flex-row justify-between gap-2 text-purple-500 border">
             <div className="text-xl xl:text-2xl font-semibold w-full pl-4 py-8 xl:px-8 xl:py-4 text-purple-500 text-left">
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="grid pt-48 md:pt-8 px-2 font-semibold grid-cols-2 gap-8 justify-evenly justify-items-center sm:grid-cols-3 sm:gap-x-0 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+        <div className="grid pt-8 px-2 font-semibold grid-cols-2 gap-8 justify-evenly justify-items-center sm:grid-cols-3 sm:gap-x-0 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
           {forcastData.map((data,index) => <Card key={index} data={data}/>)}
         </div>
         <div className="text-center -pb-4">

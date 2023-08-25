@@ -15,7 +15,7 @@ const PopUp = (props) => {
       id="outerpart"
       onClick={handleClose}
     >
-      <div className="w-[100%] h-[90vh] md:w-[60%] lg:w-[40%] bg-white flex flex-col rounded-lg px-4 md:px-14 gap-4">
+      <div className="w-[100%] md:w-[60%] lg:w-[40%] bg-white flex flex-col rounded-lg px-4 md:px-14 gap-4">
         <button className="text-black place-self-end mt-2 -mr-2 md:-mr-10">
           <AiOutlineClose
             size={25}
