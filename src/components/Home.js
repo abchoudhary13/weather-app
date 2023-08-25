@@ -22,7 +22,7 @@ const Home = () => {
       <>
       <div className="flex flex-col pt-8 md:pt-8 pb-4 gap-8">
         <div className="px-5 p md:pt-2 flex gap-8 flex-col md:flex-row justify-evenly justify-items-center">
-          <div className="w-full py-4 md:w-[50%] lg:w-[36%] rounded-3xl shadow-xl text-center flex flex-col justify-evenly justify-items-center font-bold text-purple-500 border">
+          <div className="w-full py-4cd md:w-[50%] lg:w-[36%] rounded-3xl shadow-xl text-center flex flex-col justify-evenly justify-items-center font-bold text-purple-500 border">
             <h1 className="text-4xl py-4 sm:text-5xl">{weatherData.name}</h1>
             <h1 className="text-8xl py-2 sm:text-9xl">
               {(weatherData.main.temp - 273.15).toPrecision(2)}°C
