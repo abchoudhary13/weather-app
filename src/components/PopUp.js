@@ -26,7 +26,7 @@ const PopUp = (props) => {
         <div className='bg-purple-500 text-center text-xl py-2 text-white rounded-full'>
             {date}<br/>{day}
         </div>
-        <div className="w-full p-2 text-center flex flex-row justify-between gap-2 text-purple-500">
+        <div className="w-full p-2 pb-4 text-center flex flex-row justify-between gap-2 text-purple-500">
             <div className="text-lg font-semibold w-full text-purple-500 text-left py-2">
               <ul className="list-none space-y-2">
                 <li>Felt Temp.</li>

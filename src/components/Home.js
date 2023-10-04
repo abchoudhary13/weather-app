@@ -52,11 +52,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="grid pt-8 px-2 font-semibold grid-cols-2 gap-8 justify-evenly justify-items-center sm:grid-cols-3 sm:gap-x-0 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+        <div className="grid pt-8 pb-2 px-2 font-semibold grid-cols-2 gap-8 justify-evenly justify-items-center sm:grid-cols-3 sm:gap-x-0 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
           {forcastData.map((data,index) => <Card key={index} data={data}/>)}
-        </div>
-        <div className="text-center -pb-4">
-          <p>Made with ❤️ by Anuj Beniwal</p>
         </div>
       </div>
     </>
